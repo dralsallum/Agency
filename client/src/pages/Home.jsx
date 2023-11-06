@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Main, NavTech, Slider } from "../components";
+import { Article, Divider, Footer, Main, NavTech, Slider } from "../components";
 import styled from "styled-components";
 
 const GradientWrapper = styled.div`
@@ -12,8 +12,9 @@ const Home = () => {
     <>
       <NavTech />
       <Main />
-
       <Slider />
+      <Article />
+      <Divider />
       <Footer />
     </>
   );

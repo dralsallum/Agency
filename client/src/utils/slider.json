@@ -1,18 +1,21 @@
 [
   {
-    "name": "الاطباء",
-    "price": "49",
-    "image": "../../assets/Whispers in the Rails.jpg"
-  },
-
-  {
     "name": "الممرضات",
     "price": "49",
     "image": "./r3.png"
   },
-
   {
-    "name": "العمال",
+    "name": "الاطباء",
+    "price": "49",
+    "image": "../../assets/Whispers in the Rails.jpg"
+  },
+  {
+    "name": "اسنان",
+    "price": "49",
+    "image": "./r2.png"
+  },
+  {
+    "name": "استقبال",
     "price": "49",
     "image": "./r2.png"
   },
@@ -20,5 +23,10 @@
     "name": "الكتب",
     "price": "49",
     "image": "./r3.png"
+  },
+  {
+    "name": "العمال",
+    "price": "49",
+    "image": "./r2.png"
   }
 ]

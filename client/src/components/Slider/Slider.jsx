@@ -15,15 +15,17 @@ import {
   FaStethoscope,
   FaHospitalUser,
   FaBook,
+  FaTooth,
+  FaHeadset,
 } from "react-icons/fa"; // Example icon for physician
-
-import { MdOutlineLocalHospital } from "react-icons/md";
 
 const iconMapping = {
   الاطباء: FaUserMd,
   العمال: FaStethoscope,
   الممرضات: FaHospitalUser,
   الكتب: FaBook,
+  اسنان: FaTooth,
+  استقبال: FaHeadset,
 };
 
 const Slider = () => {

@@ -94,10 +94,22 @@ const NavTech = () => {
             <NavContanierSec></NavContanierSec>
             <NavContainerThi>
               <NavrightFir></NavrightFir>
-
               <NavrightThi></NavrightThi>
-
               <NavrightFifth></NavrightFifth>
+              <Link to={"/signup"} onClick={handleSignOut}>
+                <NavrightSec>
+                  <NavrightSecSub>
+                    <NavrightSecsSpan>
+                      <NavrightSecsSpanIcon></NavrightSecsSpanIcon>
+                    </NavrightSecsSpan>
+                  </NavrightSecSub>
+                </NavrightSec>
+              </Link>
+              <NavrightSeventh>
+                <Button>Apply Now</Button>
+              </NavrightSeventh>
+              <NavrightEighth></NavrightEighth>
+              <NavrightNinth></NavrightNinth>
               <NavrightTenth>
                 <NavrightSecSub>
                   <NavrightSecsSpan>
@@ -117,31 +129,6 @@ const NavTech = () => {
                   </NavrightSecsSpan>
                 </NavrightSecSub>
               </NavrightTenth>
-              <NavrightSeventh></NavrightSeventh>
-              <NavrightEighth></NavrightEighth>
-              <NavrightNinth></NavrightNinth>
-              <Link to={"/signup"} onClick={handleSignOut}>
-                <NavrightSec>
-                  <NavrightSecSub>
-                    <NavrightSecsSpan>
-                      <NavrightSecsSpanIcon>
-                        <FontAwesomeIcon
-                          icon={faUserPlus}
-                          style={{
-                            color: "#000000",
-                            fill: "currentcolor",
-                            display: "block",
-                            width: "100%",
-                            height: "100%",
-                            overflow: "hidden",
-                            marginTop: "5px",
-                          }}
-                        />
-                      </NavrightSecsSpanIcon>
-                    </NavrightSecsSpan>
-                  </NavrightSecSub>
-                </NavrightSec>
-              </Link>
             </NavContainerThi>
           </NavWrapper>
         </NavHeaderSub>

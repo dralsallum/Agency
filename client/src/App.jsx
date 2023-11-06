@@ -9,6 +9,7 @@ import GlobalStyle from "./globalStyles";
 import { useSelector } from "react-redux";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Product from "./pages/Product";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -17,6 +18,7 @@ const App = () => {
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
         <Route
           path="/register"

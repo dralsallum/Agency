@@ -21,15 +21,15 @@ export const MaConOne = styled.div`
   top: 0;
   width: 100vw;
   z-index: 0;
+  justify-content: center;
+
   @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: flex-end;
   }
 `;
 export const MaConImg = styled.img`
   height: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: center;
   max-width: 100%;
   display: block;
   vertical-align: middle;
@@ -43,11 +43,11 @@ export const MaConTwo = styled.div`
   justify-content: flex-end;
   position: relative;
   width: 100%;
+  padding: 55px 60px;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
-    padding: 55px 60px;
-    margin: 0 auto;
+    padding: 45px 50px;
   }
 `;
 export const MaSubTwo = styled.div`
@@ -63,15 +63,12 @@ export const MaHe = styled.h1`
   opacity: 1;
   color: #fff;
   font-family: Raleway Medium;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  font-size: 52px;
+  line-height: 73px;
 
   @media screen and (max-width: 768px) {
-    font-size: 62px;
+    font-size: 50px;
     line-height: 73px;
-    padding-bottom: 40px;
   }
 `;
 export const MaInputCon = styled.div`
@@ -79,10 +76,11 @@ export const MaInputCon = styled.div`
   padding: 8px;
   background: #fff 0 0 no-repeat padding-box;
   border-radius: 10px;
+  margin: 0;
+  max-width: 500px;
 
   @media screen and (max-width: 768px) {
     margin: 0;
-    max-width: 500px;
   }
 `;
 export const MaInputSub = styled.div`
@@ -92,7 +90,6 @@ export const MaInputSub = styled.div`
 
   @media screen and (max-width: 768px) {
     margin: 0;
-    max-width: 500px;
   }
 `;
 export const MaInput = styled.input`

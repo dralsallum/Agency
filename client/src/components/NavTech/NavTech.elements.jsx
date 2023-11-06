@@ -22,7 +22,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
 
   @media screen and (max-width: 50em) {
     height: 3rem;

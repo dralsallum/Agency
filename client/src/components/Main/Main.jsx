@@ -11,16 +11,14 @@ import {
   MaSubTwo,
   MaWrapper,
 } from "./Main.elements";
+import Medical from "../../assets/medical.webp";
 
 const Main = () => {
   return (
     <>
       <MaWrapper>
         <MaConOne>
-          <MaConImg
-            src="https://www.amnhealthcare.com/siteassets/homepage/new-home-page/hero---mobile.png"
-            alt=""
-          />
+          <MaConImg src={Medical} alt="" />
         </MaConOne>
         <MaConTwo>
           <MaSubTwo>
@@ -32,7 +30,10 @@ const Main = () => {
                     <MaInputCon>
                       <MaInputSub>
                         <label htmlFor=""></label>
-                        <MaInput type="text" />
+                        <MaInput
+                          type="text"
+                          placeholder="search jobs in health care"
+                        />
                         <MaBut>
                           <i>
                             <svg
