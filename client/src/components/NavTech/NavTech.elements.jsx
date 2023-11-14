@@ -25,7 +25,7 @@ export const NavWrapper = styled.nav`
   padding: 1rem 1rem;
 
   @media screen and (max-width: 50em) {
-    height: 3rem;
+    height: 4rem;
     padding: 0.5rem;
   }
 `;
@@ -47,7 +47,7 @@ export const NavContanier = styled.div`
 `;
 export const NavContanierLogoMain = styled.div`
   width: 1.5rem;
-  height: 1.5rem;
+  height: 1.8rem;
 
   @media screen and (max-width: 50em) {
   }
@@ -63,8 +63,8 @@ export const NavContanierLogoMainSvg = styled.div`
   fill: inherit;
 `;
 export const NavContanierLogoMainimg = styled.img`
-  width: 100px;
-  height: 100%;
+  width: 150px;
+  height: 150%;
 `;
 
 export const NavContanierSec = styled.div`
@@ -245,7 +245,7 @@ export const NotWrap = styled.div`
   position: fixed;
   direction: rtl;
   cursor: default;
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-right: 2rem;
   width: 31.25rem;
   padding: 0;

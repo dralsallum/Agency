@@ -27,7 +27,7 @@ import {
   NotUl,
   NotWrap,
 } from "./NavTech.elements";
-import Logo from "../../assets/main-english-logo.png";
+import Logo from "../../assets/MedLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
@@ -67,7 +67,9 @@ const NavTech = () => {
             <NotBot>
               <NotBotAt to={"/home"}>التمريض</NotBotAt>
             </NotBot>
-            <Button primary>تسجيل الدخول</Button>
+            <Button primary onClick={handleSignOut}>
+              تسجيل الخروج
+            </Button>
           </NotUl>
         </NotCon>
       </NotWrap>
@@ -84,7 +86,7 @@ const NavTech = () => {
               <NavContanierLogoMain>
                 <NavContanierLogoMainSpan>
                   <NavContanierLogoMainSvg>
-                    <Link to="/train">
+                    <Link to="/">
                       <NavContanierLogoMainimg src={Logo} alt="" />
                     </Link>
                   </NavContanierLogoMainSvg>
@@ -106,7 +108,9 @@ const NavTech = () => {
                 </NavrightSec>
               </Link>
               <NavrightSeventh>
-                <Button>Apply Now</Button>
+                <Link to={"/upload"}>
+                  <Button>قدم الان</Button>
+                </Link>
               </NavrightSeventh>
               <NavrightEighth></NavrightEighth>
               <NavrightNinth></NavrightNinth>

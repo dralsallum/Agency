@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ProWra = styled.div`
+  direction: rtl;
   color: black;
   font-size: 24px;
   font-style: italic;
@@ -34,7 +35,7 @@ export const ProInpCon = styled.div`
   }
 `;
 export const ProInp = styled.input`
-  padding: 20px 45px 20px 20px;
+  padding: 20px 20px 20px 45px;
   border-radius: 10px;
   width: 100%;
   color: inherit;
@@ -49,11 +50,10 @@ export const ProInp = styled.input`
   }
 `;
 export const ProInpBut = styled.button`
-  padding-left: 5px;
+  padding-right: 5px;
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 17px;
-  padding-left: 5px;
   position: absolute;
   background-color: transparent;
   background-image: none;
@@ -69,7 +69,7 @@ export const ProInpBut = styled.button`
 export const ProFilCon = styled.div`
   display: inline;
   margin: auto;
-  padding-left: 20px;
+  padding-right: 20px;
   z-index: 1;
 
   @media screen and (max-width: 768px) {
@@ -102,14 +102,14 @@ export const ProFilNum = styled.div`
   opacity: 1;
   padding: 2px 5px;
   position: relative;
-  right: -7px;
+  left: -7px;
   text-align: center;
   top: -36px;
 
   @media screen and (max-width: 768px) {
     display: inline-block;
-    left: -17px;
-    right: unset;
+    right: -17px;
+    left: unset;
     top: -18px;
     width: fit-content;
   }
@@ -119,13 +119,14 @@ export const ProFilSpan = styled.span`
   display: none;
   font-family: Helvetica Now Display Medium;
   font-size: 24px;
-  text-align: right;
+  text-align: left;
   padding-left: 12px;
 
   @media screen and (max-width: 768px) {
   }
 `;
 export const ProHeCon = styled.div`
+  direction: rtl;
   width: 100%;
   margin: 0 auto;
   padding: 24px 12px;
@@ -157,7 +158,7 @@ export const ProMaHe = styled.div`
   line-height: 36px;
   font-size: 28px;
   padding-top: 10px;
-  text-align: left;
+  text-align: right;
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
@@ -173,6 +174,7 @@ export const ProMaSpan = styled.span`
   }
 `;
 export const ItemCon = styled.div`
+  direction: rtl;
   border-radius: 0;
   box-shadow: none;
   border-radius: 7px;
@@ -180,6 +182,7 @@ export const ItemCon = styled.div`
   display: block;
   opacity: 1;
   background-color: rgba(255, 255, 255);
+  padding: 4px;
 
   @media screen and (max-width: 768px) {
   }
@@ -190,7 +193,7 @@ export const ItemSubCon = styled.div`
   height: 100%;
 
   @media screen and (max-width: 768px) {
-    padding-right: 8px;
+    padding-left: 8px;
   }
 `;
 export const ItemSa = styled.div`
@@ -201,8 +204,8 @@ export const ItemSa = styled.div`
 `;
 export const ItemSat = styled.div`
   position: relative;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 
   @media screen and (max-width: 768px) {
     padding-top: 10px;
@@ -227,16 +230,12 @@ export const ItPara = styled.p`
   background-color: #003c69;
   border-radius: 5px;
   color: #fff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   font: normal normal 700 11px/19px Helvetica Now Text Regular;
   padding: 3px 10px 4px;
   text-transform: capitalize;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  text-align: left;
+  text-align: right;
 
   @media screen and (max-width: 768px) {
   }
@@ -255,7 +254,7 @@ export const ItLi = styled.li`
   display: inline-flex;
   font: normal normal medium 12px/19px Helvetica Now Text Regular;
   font-size: 12px;
-  padding-left: 12px;
+  padding-right: 12px;
   line-height: 24px;
 
   @media screen and (max-width: 768px) {
@@ -267,7 +266,7 @@ export const ItSu = styled.div`
   letter-spacing: -0.24px;
   margin-bottom: -5px;
   padding-top: 5px;
-  text-align: left;
+  text-align: right;
   text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
@@ -282,7 +281,7 @@ export const ItemConTwo = styled.div`
   font-size: 14px;
   justify-content: space-between;
   line-height: 14px;
-  color: rgba(102, 102, 102, var(--text-opacity));
+  color: rgba(102, 102, 102);
   font-family: Helvetica Now Display Medium;
 
   @media screen and (max-width: 768px) {
@@ -295,10 +294,10 @@ export const SkiAt = styled(Link)`
   font: normal normal 700 18px/22px Helvetica Now Text Regular;
   letter-spacing: -0.27px;
   opacity: 1;
-  text-align: left;
+  text-align: right;
   display: block;
   margin-bottom: 4px;
-  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 4px;
 
   @media screen and (max-width: 768px) {
@@ -308,7 +307,25 @@ export const ItemConThr = styled.div`
   font-family: Helvetica Now Text Regular;
   font-size: 14px;
   line-height: 19px;
-  padding-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const ItemConThrUl = styled.ul`
+  list-style-type: circle;
+  padding-left: 20px;
+  color: rgb(111, 111, 111);
+  padding: 0px 1rem 0rem;
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const ItemConThrLi = styled.li`
+  margin-bottom: 0px;
 
   @media screen and (max-width: 768px) {
   }
@@ -349,7 +366,7 @@ export const SkTm = styled.div`
   align-items: center;
   color: rgba(102, 102, 102);
   font-family: Helvetica Now Display Medium;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 22px;
 
   @media screen and (max-width: 768px) {
@@ -359,25 +376,27 @@ export const SkTmIc = styled.i`
   font-family: Font Awesome\6 Pro;
   font-style: normal;
 
+
   @media screen and (max-width: 768px) {
   }
 `;
 export const SkTwPara = styled.p`
   color: #5caf47;
-  font: normal normal 700 21px/22px Helvetica Now Text Regular;
+  font: normal normal 700 20px Helvetica Now Text Regular;
   letter-spacing: 0;
   opacity: 1;
-  text-align: right;
+  text-align: left;
+  margin-left: 3px;
 
   @media screen and (max-width: 768px) {
   }
 `;
 export const SkTwPa = styled.p`
   color: #444;
-  font: normal normal normal 12px/34px Helvetica Now Text Regular;
+  font: normal normal normal 12px/26px Helvetica Now Text Regular;
   letter-spacing: 0;
   opacity: 1;
-  text-align: right;
+  text-align: left;
   text-transform: capitalize;
 
   @media screen and (max-width: 768px) {
@@ -407,7 +426,7 @@ export const ItemConSix = styled.div`
 `;
 
 export const ItemBut = styled.button`
-  right: 8px;
+  left: 8px;
   top: 8px;
   border-radius: 100%;
   height: 36px;

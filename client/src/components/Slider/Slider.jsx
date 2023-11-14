@@ -13,19 +13,19 @@ import { sliderSettings } from "../../utils/common";
 import {
   FaUserMd,
   FaStethoscope,
-  FaHospitalUser,
-  FaBook,
   FaTooth,
-  FaHeadset,
+  FaPhone,
+  FaUserNurse,
+  FaMicroscope,
 } from "react-icons/fa"; // Example icon for physician
 
 const iconMapping = {
   الاطباء: FaUserMd,
   العمال: FaStethoscope,
-  الممرضات: FaHospitalUser,
-  الكتب: FaBook,
+  تمريض: FaUserNurse,
+  فني: FaMicroscope,
   اسنان: FaTooth,
-  استقبال: FaHeadset,
+  استقبال: FaPhone,
 };
 
 const Slider = () => {
@@ -38,7 +38,7 @@ const Slider = () => {
           textDecoration: "none",
           color: "inherit",
         }}
-        to={`/product/${encodeURIComponent(card.name)}`}
+        to={`/product/${encodeURIComponent(card.subName)}`}
       >
         <SliderCardContainer>
           {React.createElement(iconMapping[card.name], {

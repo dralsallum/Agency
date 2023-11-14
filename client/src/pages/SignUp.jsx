@@ -1,10 +1,10 @@
 import React from "react";
-import { Navbar, SignForm } from "../components";
+import { NavTech, SignForm } from "../components";
 
 const SignUp = () => {
   return (
     <>
-      <Navbar />
+      <NavTech />
       <SignForm />
     </>
   );

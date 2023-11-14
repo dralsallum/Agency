@@ -7,9 +7,10 @@ import {
 } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
 import { useSelector } from "react-redux";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
 import Product from "./pages/Product";
+import SignUp from "./pages/SignUp";
+import Upload from "./pages/Upload";
+import Items from "./pages/Items";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -18,11 +19,12 @@ const App = () => {
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
+        <Route path="/product/:category/:productId" element={<Items />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/product/:category" element={<Product />} />
         <Route
-          path="/register"
-          element={user ? <Navigate to="/" /> : <Register />}
+          path="/signup"
+          element={user ? <Navigate to="/" /> : <SignUp />}
         />
       </Routes>
     </Router>

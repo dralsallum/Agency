@@ -144,9 +144,9 @@ export const Button = styled.button`
   border-radius: 4px;
   background: #006fb9;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+  padding: 10px 15px;
   color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  font-size: 14px;
   outline: none;
   border: none;
   cursor: pointer;

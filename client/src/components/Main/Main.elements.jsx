@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const MaWrapper = styled.div`
+  direction: rtl;
   background: transparent linear-gradient(109deg, #0970b7, #4fbaeb) 0 0
     no-repeat padding-box;
   position: relative;
   box-sizing: border-box;
-  height: 754px;
+  height: 550px;
 
   @media screen and (max-width: 768px) {
-    height: 704px;
+    height: 550px;
   }
 `;
 
@@ -61,13 +62,15 @@ export const MaSubTwo = styled.div`
 `;
 export const MaHe = styled.h1`
   opacity: 1;
-  color: #fff;
+  color: #ffffff;
   font-family: Raleway Medium;
   font-size: 52px;
   line-height: 73px;
 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   @media screen and (max-width: 768px) {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 73px;
   }
 `;
@@ -98,14 +101,16 @@ export const MaInput = styled.input`
   font: normal normal 500 16px/18px Helvetica Now Text Regular;
   letter-spacing: 0.16px;
   opacity: 1;
-  padding: 13px 45px 13px 20px;
-  text-align: left;
+  padding: 13px 20px 13px 45px;
+  text-align: right;
   width: 100%;
   overflow: visible;
   margin: 0;
   border: none;
+  outline: none;
 
   @media screen and (max-width: 768px) {
+    text-align: right;
   }
 `;
 export const MaBut = styled.button`
