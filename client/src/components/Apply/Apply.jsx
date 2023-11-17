@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import {
   AdCon,
@@ -67,6 +68,7 @@ const Apply = () => {
   const [otherSpecialty, setOtherSpecialty] = useState("");
   const [disciplineOptions, setDisciplineOptions] = useState([]);
   const [specialtyOptions, setSpecialtyOptions] = useState([]);
+  const [file, setFile] = useState(null);
   const navigate = useNavigate();
 
   const professionOptions = {
@@ -83,6 +85,7 @@ const Apply = () => {
     "Surgical Nursing": ["Orthopedics", "Neurosurgery"],
     Cardiology: ["Interventional Cardiology", "Electrophysiology"],
     Neurology: ["Stroke Care", "Epilepsy"],
+
     // ... other discipline to specialty mappings
   };
 
@@ -381,6 +384,17 @@ const Apply = () => {
                                     <HiFiOp value="dentist">طبيب اسنان</HiFiOp>
                                     <HiFiOp value="language">فني</HiFiOp>
                                   </HiFiSel>
+                                  <HiOnSp></HiOnSp>
+                                </HiWraOn>
+                                <HiWraOn>
+                                  <HiTwLa htmlFor="">السيرة *</HiTwLa>
+                                  <HiOnIn
+                                    id="resume"
+                                    type="file"
+                                    placeholder="resume"
+                                    onChange={(e) => setFile(e.target.files[0])}
+                                  />
+
                                   <HiOnSp></HiOnSp>
                                 </HiWraOn>
                                 <HiWraOn>

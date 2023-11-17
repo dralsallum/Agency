@@ -26,15 +26,14 @@ mongoose
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads"); // Make sure this folder exists or is created
+    cb(null, "images");
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + path.extname(file.originalname)); // Add a timestamp to the original file name
+    cb(null, req.body.name);
   },
 });
 
 const upload = multer({ storage: storage });
-
 app.post(
   "/api/upload",
   upload.single("file"),
